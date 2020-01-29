@@ -40,11 +40,6 @@
    <name>santhoshhello</name>
    <url>http://104.198.69.13:8081/nexus/content/repositories/santhoshhello/</url>
   </repository>
-  <snapshotRepository>
-   <id>santhoshhello</id>
-   <name>santhoshhello</name>
-   <url>http://104.198.69.13:8081/nexus/content/repositories/santhoshhello/</url>
-  </snapshotRepository>
  </distributionManagement>
   
   </project>
