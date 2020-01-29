@@ -41,9 +41,9 @@
    <url>http://qa4.kpisoft.com:8081/repository/maven-releases/</url>
   </repository>
   <snapshotRepository>
-   <id>nexus</id>
-   <name>maven-snapshots</name>
-   <url>http://qa4.kpisoft.com:8081/repository/maven-snapshots/</url>
+   <id>santhoshhello</id>
+   <name>santhoshhello</name>
+   <url>http://104.198.69.13:8081/nexus/content/repositories/santhoshhello</url>
   </snapshotRepository>
  </distributionManagement>
   
