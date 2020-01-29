@@ -36,14 +36,14 @@
   </build>
   <distributionManagement>
   <repository>
-   <id>nexus</id>
-   <name>maven-releases</name>
-   <url>http://qa4.kpisoft.com:8081/repository/maven-releases/</url>
+   <id>santhoshhello</id>
+   <name>santhoshhello</name>
+   <url>http://104.198.69.13:8081/nexus/content/repositories/santhoshhello/</url>
   </repository>
   <snapshotRepository>
    <id>santhoshhello</id>
    <name>santhoshhello</name>
-   <url>http://104.198.69.13:8081/nexus/content/repositories/santhoshhello</url>
+   <url>http://104.198.69.13:8081/nexus/content/repositories/santhoshhello/</url>
   </snapshotRepository>
  </distributionManagement>
   
