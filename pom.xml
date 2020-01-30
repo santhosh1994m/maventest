@@ -38,7 +38,7 @@
   <repository>
    <id>santhoshhello</id>
    <name>santhoshhello</name>
-   <url>http://104.198.69.13:8081/nexus/content/repositories/santhoshhello/</url>
+   <url>http://34.69.213.17:8081/nexus/content/repositories/santhoshhello/</url>
   </repository>
  </distributionManagement>
   
