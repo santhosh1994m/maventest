@@ -16,15 +16,7 @@ tools {
             {          
                   sh 'if [ -d maventest ]; then sudo rm -rf maventest; fi'   
             }        
-             }   
-        
-        stage('git clone') 
-        {         
-            steps 
-            {  
-                 sh 'sudo git clone https://github.com/santhosh1994m/maventest.git'      
-            }    
-        }    
+             }     
        stage('sleep') 
         {      
             steps 
@@ -32,12 +24,11 @@ tools {
               sh 'sleep 10'   
             }  
         }       
-         stage('Build') {
-      // Run the maven build
-             steps{
-            sh '-Dmaven.test.failure.ignore clean package'
-         }
-         }
+          stage('Build') {
+            steps {
+                sh 'mvn -B -DskipTests clean package'
+            }
+        }
      
     }
     
