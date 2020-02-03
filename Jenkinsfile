@@ -1,12 +1,12 @@
 pipeline {
     agent any
-     tools {
-  maven 'MAVEN_HOME'
-  jdk 'JAVA_HOME'
-  git 'GIT_HOME'
-}
+tools {
+    maven 'MAVEN_HOME'
+    jdk 'JAVA_HOME'
+    git 'GIT_HOME'
+                }
     stages {
-        stage(test) {
+        stage(Start) {
             steps {
             echo 'started'
             }
@@ -14,8 +14,7 @@ pipeline {
         stage('remove the old path') { 
             steps 
             {          
-                  sh 'if [ -d maventest ]; then sudo rm -rf maventest; fi' 
-           
+                  sh 'if [ -d maventest ]; then sudo rm -rf maventest; fi'   
             }        
              }   
         
