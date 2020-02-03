@@ -34,14 +34,10 @@ tools {
         }       
          stage('Build') {
       // Run the maven build
-      steps(["MVN_HOME=$mvnHome"]) {
-         if (isUnix()) {
+             steps(["MVN_HOME=$mvnHome"]) {
             sh '"$MVN_HOME/bin/mvn" -Dmaven.test.failure.ignore clean package'
-         } else {
-            bat(/"%MVN_HOME%\bin\mvn" -Dmaven.test.failure.ignore clean package/)
          }
-      }
-   }
+         }
      
     }
     
