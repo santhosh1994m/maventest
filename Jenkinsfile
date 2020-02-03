@@ -34,8 +34,8 @@ tools {
         }       
          stage('Build') {
       // Run the maven build
-             steps(["MVN_HOME=$mvnHome"]) {
-            sh '"$MVN_HOME/bin/mvn" -Dmaven.test.failure.ignore clean package'
+             steps{
+            sh '-Dmaven.test.failure.ignore clean package'
          }
          }
      
