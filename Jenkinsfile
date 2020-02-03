@@ -31,14 +31,18 @@ pipeline {
             {      
               sh 'sleep 10'   
             }  
-        }     
-        stage ('Build project') {
-             steps {
-              dir("/var/lib/jenkins/workspace/OFFICIALDECLARATIVEPIPELINE/maventest/"){
-                sh 'mvn -B -DskipTests package'
-              }
-                  }
-             } 
+        }       
+         stage('Build') {
+      // Run the maven build
+      withEnv(["MVN_HOME=$mvnHome"]) {
+         if (isUnix()) {
+            sh '"$MVN_HOME/bin/mvn" -Dmaven.test.failure.ignore clean package'
+         } else {
+            bat(/"%MVN_HOME%\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+         }
+      }
+   }
+     
     }
     
 }
